@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.shopfee">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+    <application
+        android:name="com.app.shopfee.MyApplication"
+        android:allowBackup="false"
+        tools:replace="android:allowBackup"
+        android:fitsSystemWindows="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:exported="true"
+            android:name="com.app.shopfee.activity.SplashActivity">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:exported="false"
+            android:name="com.app.shopfee.activity.MainActivity" />
+
+        <activity
+            android:exported="false"
+            android:name="com.app.shopfee.activity.LoginActivity" />
+
+        <activity
+            android:exported="false"
+            android:name="com.app.shopfee.activity.RegisterActivity" />
+
+        <activity
+            android:exported="false"
+            android:name="com.app.shopfee.activity.DrinkDetailActivity" />
+
+        <activity
+            android:exported="false"
+            android:name="com.app.shopfee.activity.VoucherActivity" />
+
+        <activity
+            android:exported="false"
+            android:name="com.app.shopfee.activity.RatingReviewActivity" />
+
+        <activity
+            android:exported="false"
+            android:name="com.app.shopfee.activity.PaymentMethodActivity" />
+
+        <activity
+            android:exported="false"
+            android:name="com.app.shopfee.activity.CartActivity" />
+
+        <activity
+            android:exported="false"
+            android:name="com.app.shopfee.activity.PaymentActivity" />
+
+        <activity
+            android:exported="false"
+            android:name="com.app.shopfee.activity.ReceiptOrderActivity" />
+
+        <activity
+            android:exported="false"
+            android:name="com.app.shopfee.activity.TrackingOrderActivity" />
+
+        <activity
+            android:exported="false"
+            android:name="com.app.shopfee.activity.ChangePasswordActivity" />
+
+        <activity
+            android:exported="false"
+            android:name="com.app.shopfee.activity.ContactActivity" />
+
+        <activity
+            android:exported="false"
+            android:name="com.app.shopfee.activity.FeedbackActivity" />
+
+        <activity
+            android:exported="false"
+            android:name="com.app.shopfee.activity.ForgotPasswordActivity" />
+
+        <activity
+            android:exported="false"
+            android:name="com.app.shopfee.activity.AddressActivity" />
+    </application>
+
+</manifest>
