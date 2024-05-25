@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:ignore="Autofill, ContentDescription, UselessParent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_add_drink"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/layout_toolbar" />
+
+            <RelativeLayout
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:background="@drawable/bg_white_corner_16_border_gray"
+                android:layout_marginRight="@dimen/define_dimen_20"
+                android:layout_marginLeft="@dimen/define_dimen_20"
+                android:layout_marginTop="@dimen/define_dimen_10"
+                android:padding="@dimen/define_dimen_4">
+
+                <EditText
+                    android:id="@+id/edt_search_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/img_search"
+                    android:background="@color/white"
+                    android:hint="Tìm kiếm đồ uống"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:padding="@dimen/define_dimen_5"
+                    android:textColor="@color/textColorHeading"
+                    android:textColorHint="@color/textColorAccent"
+                    android:textSize="@dimen/text_size_small" />
+
+                <ImageView
+                    android:id="@+id/img_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/define_dimen_10"
+                    android:src="@drawable/ic_search" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/drinks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Danh sách đồ uống"
+                android:layout_margin="16dp"
+                android:layout_below="@+id/search"
+                android:layout_marginLeft="@dimen/define_dimen_20"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/drinks"
+                android:orientation="vertical">
+
+                <com.app.shopfee.widget.CustomTabLayout
+                    android:id="@+id/tab_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabSelectedTextColor="@color/colorPrimaryDark"
+                    app:tabTextColor="@color/colorAccent"
+                    app:tabIndicatorHeight="@dimen/define_dimen_2"
+                    app:tabIndicatorColor="@color/colorPrimaryDark"
+                    app:tabMode="scrollable"
+                    android:layout_marginTop="@dimen/define_dimen_2"/>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/bgMainColor" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/view_pager_category"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+    <Button
+        android:id="@+id/btn_add_drink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/define_dimen_10"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_button_enable_corner_16"
+        android:text="@string/add_drink"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small" />
+</RelativeLayout>

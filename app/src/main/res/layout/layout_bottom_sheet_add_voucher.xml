@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edt_discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giảm giá (%)"
+        android:inputType="number"
+        android:padding="10dp"
+        android:background="@drawable/bg_white_corner_16_border_gray" />
+
+    <EditText
+        android:id="@+id/edt_minimum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số tiền tối thiểu (nghìn đồng)"
+        android:inputType="number"
+        android:padding="10dp"
+        android:background="@drawable/bg_white_corner_16_border_gray"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:gravity="center"
+            android:text="Hủy"
+            android:layout_marginLeft="@dimen/define_dimen_10"
+            android:layout_marginRight="@dimen/define_dimen_10"
+            android:background="@drawable/bg_button_disable_corner_16"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:gravity="center"
+            android:text="Thêm"
+            android:layout_marginLeft="@dimen/define_dimen_10"
+            android:layout_marginRight="@dimen/define_dimen_10"
+            android:background="@drawable/bg_button_enable_corner_16"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

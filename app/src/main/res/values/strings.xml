@@ -1,0 +1,201 @@
+<resources>
+    <string name="app_name">Coffee with Mr.Kiên</string>
+
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_history">Lịch sử</string>
+    <string name="nav_account">Tài Khoản</string>
+
+    <string name="title_voucher">Khuyến mại</string>
+    <string name="title_payment_method">Phương thức thanh toán</string>
+
+    // action
+    <string name="action_ok">Đồng ý</string>
+    <string name="action_cancel">Hủy</string>
+    <string name="action_add">Thêm</string>
+
+    <string name="hint_email">Nhập email của bạn</string>
+    <string name="hint_password">Nhập mật khẩu của bạn</string>
+    <string name="hint_password_old">Vui lòng nhập mật khẩu cũ…</string>
+    <string name="hint_password_new">Vui lòng nhập mật khẩu mới…</string>
+    <string name="hint_password_confirm">Vui lòng xác nhận mật khẩu mới…</string>
+    <string name="hint_optional">Không bắt buộc</string>
+    <string name="hint_rating_review">Hãy cho chúng tôi biết đánh giá của bạn</string>
+
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="register">Đăng Ký</string>
+    <string name="have_account">Bạn đã có tài khoản?</string>
+    <string name="have_not_account">Bạn chưa có tài khoản?</string>
+    <string name="login">Đăng Nhập</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="feedback">Phản hồi</string>
+    <string name="contact">Liên hệ</string>
+    <string name="change_password">Đổi mật khẩu</string>
+    <string name="sign_out">Đăng xuất</string>
+    <string name="reset_password">Gửi lại mật khẩu</string>
+    <string name="add_address">Thêm địa chỉ giao hàng</string>
+    <string name="full_name">Họ và Tên:</string>
+    <string name="address">Địa chỉ:</string>
+    <string name="phone_number">Điện thoại:</string>
+    <string name="address_title">Địa chỉ giao hàng</string>
+    <string name="label_full_name">Họ và tên (*)</string>
+    <string name="label_phone">Điện thoại (*)</string>
+    <string name="label_address">Địa chỉ (*)</string>
+    <string name="order_full_name">Họ và Tên</string>
+    <string name="order_address">Địa chỉ</string>
+    <string name="order_phone_number">Điện thoại</string>
+
+    <string name="msg_get_date_error">Xảy ra lỗi, vui lòng thử lại</string>
+    <string name="msg_exit_app">Bạn có muốn thoát ứng dụng?</string>
+    <string name="msg_waiting_message">Vui lòng đợi…</string>
+
+    <string name="msg_email_require">Vui lòng nhập email của bạn</string>
+    <string name="msg_password_require">Vui lòng nhập mật khẩu của bạn</string>
+    <string name="msg_email_invalid">Email của bạn không hợp lệ</string>
+
+    <string name="label_user_name">Email</string>
+    <string name="label_old_password">Mật khẩu cũ</string>
+    <string name="label_new_password">Mật khẩu mới</string>
+    <string name="label_confirm_new_password">Xác nhận mật khẩu mới</string>
+    <string name="msg_old_password_require">Vui lòng nhập mật khẩu cũ</string>
+    <string name="msg_new_password_require">Vui lòng nhập mật khẩu mới</string>
+    <string name="msg_confirm_password_require">Vui lòng xác nhận mật khẩu mới</string>
+    <string name="msg_old_password_invalid">Mật khẩu cũ không chính xác, vui lòng nhập lại</string>
+    <string name="msg_confirm_password_invalid">Xác nhận mật khẩu mới không trùng khớp</string>
+    <string name="msg_new_password_invalid">Mật khẩu mới phải khác mật khẩu cũ</string>
+
+    <string name="msg_change_password_successfully">Thay đổi mật khẩu thành công</string>
+    <string name="msg_reset_password_successfully">Lấy lại mật khẩu thành công, vui lòng kiểm tra email của bạn</string>
+
+    <string name="msg_register_error">Đăng ký không thành công, vui lòng thử lại</string>
+    <string name="msg_login_error">Đăng nhập không thành công, vui lòng thử lại</string>
+    <string name="message_enter_infor">Vui lòng điền đầy đủ thông tin</string>
+    <string name="msg_add_address_success">Thêm địa chỉ giao hàng thành công</string>
+
+    <string name="filter_all">Tất cả</string>
+    <string name="filter_rate">Xếp hạng</string>
+    <string name="filter_price">Giá</string>
+    <string name="filter_promotion">Khuyến mại</string>
+
+    <string name="hint_home_search">Hôm nay bạn muốn uống gì?</string>
+    <string name="hint_voucher_code">Vui lòng nhập mã khuyến mại</string>
+    <string name="ratings_and_reviews">Xếp hạng và đánh giá</string>
+    <string name="customize">Tùy chỉnh</string>
+    <string name="label_variant">Đồ uống</string>
+    <string name="label_size">Kích thước</string>
+    <string name="label_sugar">Đường</string>
+    <string name="label_ice">Đá</string>
+    <string name="label_hot">Nóng</string>
+    <string name="label_regular">Nhỏ</string>
+    <string name="label_medium">Vừa</string>
+    <string name="label_large">Lớn</string>
+    <string name="label_normal">Bình thường</string>
+    <string name="label_less">Giảm bớt</string>
+    <string name="label_topping">Thêm lựa chọn khác</string>
+    <string name="label_notes">Ghi chú</string>
+    <string name="label_total">Tổng tiền</string>
+    <string name="label_add_order">Thêm vào giỏ hàng</string>
+
+    <string name="label_rating_review_order">Đánh giá quá trình giao hàng cho đơn hàng này</string>
+    <string name="label_rating_review_drink">Bạn cảm thấy đồ uống này như thế nào?</string>
+    <string name="label_rating">Xếp hạng</string>
+    <string name="label_review">Đánh giá</string>
+    <string name="label_review_note">Đánh giá sẽ được hiển thị công khai</string>
+    <string name="label_send_review">Gửi đánh giá</string>
+    <string name="msg_send_review_success">Đánh giá đã được gửi thành công</string>
+
+    <string name="label_cart">Giỏ hàng</string>
+    <string name="label_checkout">Đặt đơn hàng</string>
+    <string name="label_payment_method">Phương thức thanh toán</string>
+    <string name="label_no_payment_method">Chưa chọn phương thức thanh toán</string>
+    <string name="label_no_address">Chưa chọn địa chỉ giao hàng</string>
+    <string name="label_no_voucher">Chưa áp dụng mã khuyến mại</string>
+    <string name="label_payment_summary">Thanh toán</string>
+    <string name="label_price">Giá</string>
+    <string name="label_choose_payment_method">Vui lòng chọn phương thức thanh toán</string>
+    <string name="label_choose_address">Vui lòng chọn địa chỉ giao hàng</string>
+    <string name="label_item">đồ uống</string>
+
+    <string name="label_thank_you">Cám ơn bạn!</string>
+    <string name="label_your_transaction_success">Giao dịch của bạn đã thành công</string>
+    <string name="label_id_transaction">Mã giao dịch</string>
+    <string name="label_date_and_time">Thời gian</string>
+    <string name="label_tracking_order">Theo dõi đơn hàng</string>
+    <string name="label_receipt_order">Hóa đơn</string>
+
+    <string name="label_shop_takes_order">Quán nhận được đơn hàng</string>
+    <string name="label_prepare_your_order">Chuẩn bị đơn hàng</string>
+    <string name="label_order_complete">Đơn hàng của bạn đã hoàn tất, chúng tôi sẽ giao hàng ngay cho bạn</string>
+    <string name="label_take_order">Nhận đơn hàng</string>
+    <string name="label_take_order_message">Vui lòng kiểm tra lại đơn hàng khi nhận</string>
+    <string name="label_process">Đang xử lý</string>
+    <string name="label_done">Hoàn thành</string>
+    <string name="label_success">Thành công</string>
+
+    <string name="label_facebook">Facebook</string>
+    <string name="label_call">Call Phone</string>
+    <string name="label_gmail">Gmail</string>
+    <string name="label_skype">Skype</string>
+    <string name="label_youtube">Youtube</string>
+    <string name="label_zalo">Zalo</string>
+    <string name="name_require">Vui lòng nhập tên của bạn</string>
+    <string name="comment_require">Vui lòng nhập phản hồi của bạn</string>
+    <string name="msg_send_feedback_success">Gửi phản hồi thành công, cám ơn bạn rất nhiều!</string>
+    <string name="feedback_name">Họ và tên (*)</string>
+    <string name="feedback_email">Email</string>
+    <string name="feedback_phone">Số điện thoại</string>
+    <string name="feedback_comment">Nội dung (*)</string>
+    <string name="send_feedback">Gửi phản hồi</string>
+
+    <string name="channel_name">Thông báo đặt hàng</string>
+    <string name="channel_description">Nhận thông tin cập nhật về đơn đặt hàng và trạng thái giao hàng của bạn.</string>
+    <string name="update">Cập nhật</string>
+    <string name="manage_drinks">Quản lý đồ uống</string>
+    <string name="manage_customers">Quản lý khách hàng</string>
+    <string name="manage_vouchers">Voucher và khuyến mãi</string>
+    <string name="view_feedback">Xem phản hồi</string>
+    <string name="manage_orders">Quản lý đơn hàng</string>
+    <string name="view_revenue">Xem doanh thu</string>
+    <string name="drink_title">Quản lý đồ uống</string>
+    <string name="add_drink">Thêm đồ uống mới</string>
+    <string name="msg_add_drink_success">Thêm đồ uống thành công</string>
+    <string name="msg_add_drink_error">Thêm đồ uống thất bại</string>
+    <string name="msg_update_drink_success">Cập nhật đồ uống thành công</string>
+    <string name="msg_update_drink_error">Cập nhật đồ uống thất bại</string>
+    <string name="msg_delete_drink_success">Xóa đồ uống thành công</string>
+    <string name="msg_delete_drink_error">Xóa đồ uống thất bại</string>
+    <string name="drink_detail_title">Chi tiết đồ uống</string>
+    <string name="msg_load_category_error">Lỗi khi lấy dữ liệu</string>
+    <string name="message_enter_valid_number">Số nhập không hợp lệ</string>
+    <string name="user_title">Quản lý khách hàng</string>
+    <string name="msg_load_user_error">Không tải được user</string>
+
+    <string name="order_status_all">Tất cả</string>
+    <string name="order_status_new">Mới</string>
+    <string name="order_status_doing">Đang xử lý</string>
+    <string name="order_status_arrived">Đã giao</string>
+    <string name="order_status_complete">Hoàn thành</string>
+    <string name="order_detail_title">Chi tiết đơn hàng</string>
+    <string name="label_voucher_management">Quản lý mã giảm giá</string>
+    <string name="order_title">Quản lý đơn hàng</string>
+    <string name="title_feedback">Xem phản hồi</string>
+    <string name="revenue_title">Xem doanh thu</string>
+
+    <string-array name="order_status_array">
+        <item>@string/order_status_all</item>
+        <item>@string/order_status_new</item>
+        <item>@string/order_status_doing</item>
+        <item>@string/order_status_arrived</item>
+        <item>@string/order_status_complete</item>
+    </string-array>
+
+    <string-array name="revenue_filter_array">
+        <item>All</item>
+        <item>Ngày</item>
+        <item>Tuần</item>
+        <item>Tháng</item>
+        <item>Quý</item>
+        <item>Năm</item>
+        <item>Tùy chọn khoảng thời gian</item>
+    </string-array>
+</resources>

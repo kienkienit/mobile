@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/white"
+        tools:context=".activity.AdminDashboardActivity">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_logo"/>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_corner_6_border_gray"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutOrdersToday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_orders_today_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Đơn hàng hôm nay"
+                    android:textColor="@color/textColorHeading"
+                    android:textSize="@dimen/text_size_xnormal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_orders_today_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/textColorHeading"
+                    android:textSize="@dimen/text_size_xnormal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/bgFilter"
+                android:layout_marginTop="@dimen/define_dimen_40"
+                android:layout_marginBottom="@dimen/define_dimen_16"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutRevenueToday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayoutOrdersToday"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_revenue_today_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Doanh thu"
+                    android:textColor="@color/textColorHeading"
+                    android:textSize="@dimen/text_size_xnormal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_revenue_today_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$0"
+                    android:textColor="@color/textColorHeading"
+                    android:textSize="@dimen/text_size_xnormal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/bgFilter"
+                android:layout_marginTop="@dimen/define_dimen_85"
+                android:layout_marginBottom="@dimen/define_dimen_16"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutProfitToday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayoutRevenueToday"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_profit_today_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Lợi nhuận"
+                    android:textColor="@color/textColorHeading"
+                    android:textSize="@dimen/text_size_xnormal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_profit_today_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$0"
+                    android:textColor="@color/textColorHeading"
+                    android:textSize="@dimen/text_size_xnormal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/revenue_chart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="16dp" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <!-- Row 1 -->
+            <LinearLayout
+                android:id="@+id/row_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btn_manage_drinks"
+                    android:layout_width="@dimen/define_dimen_150"
+                    android:layout_height="@dimen/define_dimen_150"
+                    android:src="@drawable/image_drink_management"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@android:color/white"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="@string/manage_drinks"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btn_manage_customers"
+                    android:layout_width="@dimen/define_dimen_150"
+                    android:layout_height="@dimen/define_dimen_150"
+                    android:src="@drawable/image_customer_management"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@android:color/white"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/manage_customers"/>
+            </LinearLayout>
+
+            <!-- Row 2 -->
+            <LinearLayout
+                android:id="@+id/row_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row_one"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btn_manage_vouchers"
+                    android:layout_width="@dimen/define_dimen_150"
+                    android:layout_height="@dimen/define_dimen_150"
+                    android:src="@drawable/image_voucher_management"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@android:color/white"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="@string/manage_vouchers"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btn_view_feedback"
+                    android:layout_width="@dimen/define_dimen_150"
+                    android:layout_height="@dimen/define_dimen_150"
+                    android:src="@drawable/image_feedback_management"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@android:color/white"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/view_feedback"/>
+            </LinearLayout>
+
+            <!-- Row 3 -->
+            <LinearLayout
+                android:id="@+id/row_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row_two"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btn_manage_orders"
+                    android:layout_width="@dimen/define_dimen_150"
+                    android:layout_height="@dimen/define_dimen_150"
+                    android:src="@drawable/image_order_management"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@android:color/white"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="@string/manage_orders"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btn_view_revenue"
+                    android:layout_width="@dimen/define_dimen_150"
+                    android:layout_height="@dimen/define_dimen_150"
+                    android:src="@drawable/image_revenue_management"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@android:color/white"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/view_revenue"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_out"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center" />
+    </LinearLayout>
+</ScrollView>

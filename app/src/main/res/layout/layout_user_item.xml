@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg_white_corner_16_border_gray"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user@example.com"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_total_orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tổng số đơn hàng: 0"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tv_completed_orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đơn hàng đã nhận: 0"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/tv_pending_orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đơn hàng chưa nhận: 0"
+        android:layout_marginTop="4dp" />
+</LinearLayout>
