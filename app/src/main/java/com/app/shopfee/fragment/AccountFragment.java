@@ -18,6 +18,7 @@ import com.app.shopfee.activity.ContactActivity;
 import com.app.shopfee.activity.FeedbackActivity;
 import com.app.shopfee.activity.LoginActivity;
 import com.app.shopfee.activity.MainActivity;
+<<<<<<< HEAD
 import com.app.shopfee.model.User;
 import com.app.shopfee.prefs.DataStoreManager;
 import com.app.shopfee.utils.GlobalFunction;
@@ -27,6 +28,11 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+=======
+import com.app.shopfee.prefs.DataStoreManager;
+import com.app.shopfee.utils.GlobalFunction;
+import com.google.firebase.auth.FirebaseAuth;
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
 
 public class AccountFragment extends Fragment {
 
@@ -35,7 +41,10 @@ public class AccountFragment extends Fragment {
     private LinearLayout layoutContact;
     private LinearLayout layoutChangePassword;
     private LinearLayout layoutSignOut;
+<<<<<<< HEAD
     private TextView tvUsername;
+=======
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
 
     @Nullable
     @Override
@@ -47,11 +56,15 @@ public class AccountFragment extends Fragment {
         initToolbar();
         initUi();
         initListener();
+<<<<<<< HEAD
         loadUserEmail();
+=======
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
 
         return mView;
     }
 
+<<<<<<< HEAD
     private void loadUserEmail() {
         String currentUserId = FirebaseAuth.getInstance().getCurrentUser().getUid();
         DatabaseReference userRef = FirebaseDatabase.getInstance().getReference("users").child(currentUserId);
@@ -73,6 +86,8 @@ public class AccountFragment extends Fragment {
         });
     }
 
+=======
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
     private void initToolbar() {
         ImageView imgToolbarBack = mView.findViewById(R.id.img_toolbar_back);
         TextView tvToolbarTitle = mView.findViewById(R.id.tv_toolbar_title);
@@ -87,8 +102,13 @@ public class AccountFragment extends Fragment {
     }
 
     private void initUi() {
+<<<<<<< HEAD
         tvUsername = mView.findViewById(R.id.tv_username);
 //        tvUsername.setText(DataStoreManager.getUser().getEmail());
+=======
+        TextView tvUsername = mView.findViewById(R.id.tv_username);
+        tvUsername.setText(DataStoreManager.getUser().getEmail());
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
         layoutFeedback = mView.findViewById(R.id.layout_feedback);
         layoutContact = mView.findViewById(R.id.layout_contact);
         layoutChangePassword = mView.findViewById(R.id.layout_change_password);

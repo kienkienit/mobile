@@ -7,11 +7,14 @@ public class Category {
 
     public Category() {}
 
+<<<<<<< HEAD
     public Category(int id, String name) {
         this.id = id;
         this.name = name;
     }
 
+=======
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
     public int getId() {
         return id;
     }

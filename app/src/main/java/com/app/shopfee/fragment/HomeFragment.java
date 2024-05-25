@@ -156,11 +156,14 @@ public class HomeFragment extends Fragment {
                 bundle.putInt(Constant.DRINK_ID, drink.getId());
                 GlobalFunction.startActivity(getActivity(), DrinkDetailActivity.class, bundle);
             }
+<<<<<<< HEAD
 
             @Override
             public void onClickDrinkItemManagement(Drink drink) {
 
             }
+=======
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
         });
         viewPagerDrinkFeatured.setAdapter(adapter);
         indicatorDrinkFeatured.setViewPager(viewPagerDrinkFeatured);

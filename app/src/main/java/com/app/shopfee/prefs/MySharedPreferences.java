@@ -86,6 +86,7 @@ public class MySharedPreferences {
                 MOVIE_PRO_PREFERENCES, 0);
         return pref.getFloat(key, 0.0f);
     }
+<<<<<<< HEAD
 
     public void removeValue(String key) {
         android.content.SharedPreferences pref = mContext.getSharedPreferences(
@@ -94,4 +95,6 @@ public class MySharedPreferences {
         editor.remove(key);
         editor.apply();
     }
+=======
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
 }

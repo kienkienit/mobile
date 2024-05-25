@@ -150,6 +150,7 @@
     <string name="channel_name">Thông báo đặt hàng</string>
     <string name="channel_description">Nhận thông tin cập nhật về đơn đặt hàng và trạng thái giao hàng của bạn.</string>
     <string name="update">Cập nhật</string>
+<<<<<<< HEAD
     <string name="manage_drinks">Quản lý đồ uống</string>
     <string name="manage_customers">Quản lý khách hàng</string>
     <string name="manage_vouchers">Voucher và khuyến mãi</string>
@@ -198,4 +199,7 @@
         <item>Năm</item>
         <item>Tùy chọn khoảng thời gian</item>
     </string-array>
+=======
+
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
 </resources>

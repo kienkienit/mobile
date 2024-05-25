@@ -1,17 +1,26 @@
 package com.app.shopfee.activity;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+=======
+import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+<<<<<<< HEAD
 import androidx.annotation.NonNull;
 
+=======
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
 import com.app.shopfee.R;
 import com.app.shopfee.model.User;
 import com.app.shopfee.prefs.DataStoreManager;
@@ -19,11 +28,14 @@ import com.app.shopfee.utils.GlobalFunction;
 import com.app.shopfee.utils.StringUtil;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+<<<<<<< HEAD
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+=======
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
 
 public class LoginActivity extends BaseActivity {
 
@@ -135,6 +147,7 @@ public class LoginActivity extends BaseActivity {
                 .addOnCompleteListener(this, task -> {
                     showProgressDialog(false);
                     if (task.isSuccessful()) {
+<<<<<<< HEAD
 //                        FirebaseUser user = firebaseAuth.getCurrentUser();
                         FirebaseUser user = task.getResult().getUser();
                         if (user != null) {
@@ -166,6 +179,17 @@ public class LoginActivity extends BaseActivity {
                     } else {
                         showToastMessage(getString(R.string.msg_login_error));
                         Log.e("FirebaseLogin", "Login failed: " + task.getException().getMessage());
+=======
+                        FirebaseUser user = firebaseAuth.getCurrentUser();
+                        if (user != null) {
+                            User userObject = new User(user.getEmail(), password);
+                            DataStoreManager.setUser(userObject);
+                            GlobalFunction.startActivity(LoginActivity.this, MainActivity.class);
+                            finishAffinity();
+                        }
+                    } else {
+                        showToastMessage(getString(R.string.msg_login_error));
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
                     }
                 });
     }

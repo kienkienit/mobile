@@ -6,7 +6,11 @@ public interface AboutUsConfig {
     String ABOUT_US_SLOGAN = "Uống cà phê ngon, tận hưởng cuộc sống trọn vẹn";
     String ABOUT_US_WEBSITE_TITLE = "Website của quán";
 
+<<<<<<< HEAD
     String PAGE_FACEBOOK = "https://www.facebook.com/kien.phung.50596";
+=======
+    String PAGE_FACEBOOK = "fb://page/tincoder";
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
     String LINK_FACEBOOK = "https://www.facebook.com/kien.phung.50596";
     String LINK_YOUTUBE = "https://www.youtube.com/channel/UCtyFjfprSdCjEQM2X2ZtP6Q";
     String PHONE_NUMBER = "+84385753910";

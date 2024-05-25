@@ -18,7 +18,10 @@ import com.app.shopfee.activity.DrinkDetailActivity;
 import com.app.shopfee.adapter.DrinkAdapter;
 import com.app.shopfee.adapter.FilterAdapter;
 import com.app.shopfee.event.SearchKeywordEvent;
+<<<<<<< HEAD
 import com.app.shopfee.listener.IClickDrinkListener;
+=======
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
 import com.app.shopfee.model.Drink;
 import com.app.shopfee.model.Filter;
 import com.app.shopfee.utils.Constant;
@@ -159,6 +162,7 @@ public class DrinkFragment extends Fragment {
         listDrinkDisplay = new ArrayList<>();
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         rcvDrink.setLayoutManager(linearLayoutManager);
+<<<<<<< HEAD
         drinkAdapter = new DrinkAdapter(listDrinkDisplay, new IClickDrinkListener() {
             @Override
             public void onClickDrinkItem(Drink drink) {
@@ -171,6 +175,12 @@ public class DrinkFragment extends Fragment {
             public void onClickDrinkItemManagement(Drink drink) {
 
             }
+=======
+        drinkAdapter = new DrinkAdapter(listDrinkDisplay, drink -> {
+            Bundle bundle = new Bundle();
+            bundle.putInt(Constant.DRINK_ID, drink.getId());
+            GlobalFunction.startActivity(getActivity(), DrinkDetailActivity.class, bundle);
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
         });
         rcvDrink.setAdapter(drinkAdapter);
     }

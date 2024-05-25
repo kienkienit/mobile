@@ -129,6 +129,7 @@ public class TrackingOrderActivity extends BaseActivity {
     private void sendNotificationBasedOnStatus(int status) {
         switch (status) {
             case Order.STATUS_NEW:
+<<<<<<< HEAD
 //                NotificationHelper.sendNotification(this, "Đơn hàng mới", "Đơn hàng của bạn đã được tiếp nhận.");
                 break;
             case Order.STATUS_DOING:
@@ -136,6 +137,15 @@ public class TrackingOrderActivity extends BaseActivity {
                 break;
             case Order.STATUS_ARRIVED:
 //                NotificationHelper.sendNotification(this, "Đơn hàng đã sẵn sàng", "Đơn hàng của bạn đã sẵn sàng để nhận.");
+=======
+                NotificationHelper.sendNotification(this, "Đơn hàng mới", "Đơn hàng của bạn đã được tiếp nhận.");
+                break;
+            case Order.STATUS_DOING:
+                NotificationHelper.sendNotification(this, "Đơn hàng đang xử lý", "Chúng tôi đang chuẩn bị món của bạn.");
+                break;
+            case Order.STATUS_ARRIVED:
+                NotificationHelper.sendNotification(this, "Đơn hàng đã sẵn sàng", "Đơn hàng của bạn đã sẵn sàng để nhận.");
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
                 break;
             case Order.STATUS_COMPLETE:
                 NotificationHelper.sendNotification(this, "Đơn hàng hoàn thành", "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi.");

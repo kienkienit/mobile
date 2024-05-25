@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ////package com.app.shopfee.activity;
 ////
 ////import android.os.Bundle;
@@ -672,6 +673,8 @@
 //    }
 //}
 
+=======
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
 package com.app.shopfee.activity;
 
 import android.os.Bundle;
@@ -700,18 +703,27 @@ import com.app.shopfee.model.Order;
 import com.app.shopfee.model.PaymentMethod;
 import com.app.shopfee.model.Voucher;
 import com.app.shopfee.prefs.DataStoreManager;
+<<<<<<< HEAD
 import com.app.shopfee.prefs.MySharedPreferences;
 import com.app.shopfee.utils.Constant;
 import com.app.shopfee.utils.GlobalFunction;
 import com.app.shopfee.utils.NotificationHelper;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+=======
+import com.app.shopfee.utils.Constant;
+import com.app.shopfee.utils.GlobalFunction;
+import com.app.shopfee.utils.NotificationHelper;
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
+<<<<<<< HEAD
 import java.lang.reflect.Type;
+=======
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
 import java.util.ArrayList;
 import java.util.List;
 
@@ -740,17 +752,23 @@ public class CartActivity extends BaseActivity {
     private PaymentMethod paymentMethodSelected;
     private Address addressSelected;
     private Voucher voucherSelected;
+<<<<<<< HEAD
     private MySharedPreferences mySharedPreferences;
     private String currentUserEmail;
+=======
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
 
+<<<<<<< HEAD
         mySharedPreferences = new MySharedPreferences(this);
         currentUserEmail = DataStoreManager.getUser().getEmail();
 
+=======
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
         if (!EventBus.getDefault().isRegistered(this)) {
             EventBus.getDefault().register(this);
         }
@@ -824,7 +842,10 @@ public class CartActivity extends BaseActivity {
                 showToastMessage(getString(R.string.label_choose_address));
                 return;
             }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
             Order orderBooking = new Order();
             orderBooking.setId(System.currentTimeMillis());
             orderBooking.setUserEmail(DataStoreManager.getUser().getEmail());
@@ -846,9 +867,12 @@ public class CartActivity extends BaseActivity {
 
             NotificationHelper.sendOrderSuccessNotification(this);
 
+<<<<<<< HEAD
             // Clear cart items after checkout
             clearCartItems();
 
+=======
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
             Bundle bundle = new Bundle();
             bundle.putSerializable(Constant.ORDER_OBJECT, orderBooking);
             GlobalFunction.startActivity(CartActivity.this, PaymentActivity.class, bundle);
@@ -856,10 +880,15 @@ public class CartActivity extends BaseActivity {
     }
 
     private void initData() {
+<<<<<<< HEAD
         listDrinkCart = getCartItems();
         if (listDrinkCart == null || listDrinkCart.isEmpty()) {
             listDrinkCart = DrinkDatabase.getInstance(this).drinkDAO().getListDrinkCart();
         }
+=======
+        listDrinkCart = new ArrayList<>();
+        listDrinkCart = DrinkDatabase.getInstance(this).drinkDAO().getListDrinkCart();
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
         if (listDrinkCart == null || listDrinkCart.isEmpty()) {
             return;
         }
@@ -869,9 +898,15 @@ public class CartActivity extends BaseActivity {
                 DrinkDatabase.getInstance(CartActivity.this).drinkDAO().deleteDrink(drink);
                 listDrinkCart.remove(position);
                 cartAdapter.notifyItemRemoved(position);
+<<<<<<< HEAD
                 displayCountItemCart();
                 calculateTotalPrice();
                 saveCartItems(listDrinkCart);
+=======
+
+                displayCountItemCart();
+                calculateTotalPrice();
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
                 EventBus.getDefault().post(new DisplayCartEvent());
             }
 
@@ -879,8 +914,13 @@ public class CartActivity extends BaseActivity {
             public void onClickUpdateItem(Drink drink, int position) {
                 DrinkDatabase.getInstance(CartActivity.this).drinkDAO().updateDrink(drink);
                 cartAdapter.notifyItemChanged(position);
+<<<<<<< HEAD
                 calculateTotalPrice();
                 saveCartItems(listDrinkCart);
+=======
+
+                calculateTotalPrice();
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
                 EventBus.getDefault().post(new DisplayCartEvent());
             }
 
@@ -989,6 +1029,7 @@ public class CartActivity extends BaseActivity {
         }
     }
 
+<<<<<<< HEAD
     private void saveCartItems(List<Drink> cartItems) {
         if (currentUserEmail != null && !currentUserEmail.isEmpty()) {
             Gson gson = new Gson();
@@ -1014,6 +1055,8 @@ public class CartActivity extends BaseActivity {
             mySharedPreferences.removeValue(currentUserEmail + "_cart");
         }
     }
+=======
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
 
     @Override
     protected void onDestroy() {
@@ -1022,5 +1065,9 @@ public class CartActivity extends BaseActivity {
             EventBus.getDefault().unregister(this);
         }
     }
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be

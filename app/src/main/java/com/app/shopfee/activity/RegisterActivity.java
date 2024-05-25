@@ -14,11 +14,14 @@ import com.app.shopfee.utils.GlobalFunction;
 import com.app.shopfee.utils.StringUtil;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+<<<<<<< HEAD
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
 import java.util.Map;
+=======
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
 
 public class RegisterActivity extends BaseActivity {
 
@@ -124,6 +127,7 @@ public class RegisterActivity extends BaseActivity {
                 .addOnCompleteListener(this, task -> {
                     showProgressDialog(false);
                     if (task.isSuccessful()) {
+<<<<<<< HEAD
 //                        FirebaseUser user = firebaseAuth.getCurrentUser();
                         FirebaseUser user = task.getResult().getUser();
                         if (user != null) {
@@ -145,6 +149,14 @@ public class RegisterActivity extends BaseActivity {
                                     .addOnFailureListener(e -> {
                                         showToastMessage("Failed to save user data: " + e.getMessage());
                                     });
+=======
+                        FirebaseUser user = firebaseAuth.getCurrentUser();
+                        if (user != null) {
+                            User userObject = new User(user.getEmail(), password);
+                            DataStoreManager.setUser(userObject);
+                            GlobalFunction.startActivity(RegisterActivity.this, MainActivity.class);
+                            finishAffinity();
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
                         }
                     } else {
                         showToastMessage(getString(R.string.msg_register_error));

@@ -40,11 +40,14 @@
         <item name="android:stepSize">0.5</item>
     </style>
 
+<<<<<<< HEAD
     <style name="SpinnerItemStyle">
         <item name="android:textColor">@android:color/white</item>
         <item name="android:background">@drawable/bg_main_corner_6</item>
     </style>
 
+=======
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
     <declare-styleable name="DividerView">
         <attr name="color" format="color" />
         <attr name="dashLength" format="dimension" />

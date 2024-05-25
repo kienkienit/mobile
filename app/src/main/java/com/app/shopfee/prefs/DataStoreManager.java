@@ -45,9 +45,12 @@ public class DataStoreManager {
         }
         return new User();
     }
+<<<<<<< HEAD
 
     public static void removeUser() {
         DataStoreManager.getInstance().sharedPreferences
                 .removeValue(PREF_USER_INFOR);
     }
+=======
+>>>>>>> 730775bb52baef2754489b5d73080ff0f35cc5be
 }
