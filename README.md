@@ -65,11 +65,3 @@
 4. Chạy ứng dụng:
    - Mở dự án bằng Android Studio và build ứng dụng.
 
-## Đóng góp
-
-Mọi đóng góp đều được chào đón! Bạn có thể fork dự án, tạo một nhánh mới và gửi pull request.
-
-## Tác giả
-
-Phùng Đức Kiên
-
